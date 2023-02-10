@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Ashless</title>
+  
+  <subtitle>Ashless</subtitle>
+  <link href="https://ashless.io/atom.xml" rel="self"/>
+  
+  <link href="https://ashless.io/"/>
+  <updated>2023-02-10T01:17:23.570Z</updated>
+  <id>https://ashless.io/</id>
+  
+  <author>
+    <name>Ashless</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Basic Git commands</title>
+    <link href="https://ashless.io/2023/02/05/gitcmd/"/>
+    <id>https://ashless.io/2023/02/05/gitcmd/</id>
+    <published>2023-02-05T23:00:00.000Z</published>
+    <updated>2023-02-10T01:17:23.570Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Init-repo&quot;&gt;&lt;a href=&quot;#Init-repo&quot; class=&quot;headerlink&quot; title=&quot;Init repo&quot;&gt;&lt;/a&gt;Init repo&lt;/h3&gt;&lt;p&gt;When in the working directory do this</summary>
+        
+      
+    
+    
+    
+    
+    <category term="EN" scheme="https://ashless.io/tags/EN/"/>
+    
+    <category term="Linux" scheme="https://ashless.io/tags/Linux/"/>
+    
+    <category term="git" scheme="https://ashless.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python Video Insertion Script</title>
+    <link href="https://ashless.io/2023/01/24/pyvideoscript/"/>
+    <id>https://ashless.io/2023/01/24/pyvideoscript/</id>
+    <published>2023-01-24T19:50:30.000Z</published>
+    <updated>2023-02-10T01:17:29.314Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Multiple-videos-insert-python-script&quot;&gt;&lt;a href=&quot;#Multiple-videos-insert-python-script&quot; class=&quot;headerlink&quot; title=&quot;Multiple videos</summary>
+        
+      
+    
+    
+    
+    
+    <category term="ffmpeg" scheme="https://ashless.io/tags/ffmpeg/"/>
+    
+    <category term="EN" scheme="https://ashless.io/tags/EN/"/>
+    
+    <category term="Linux" scheme="https://ashless.io/tags/Linux/"/>
+    
+    <category term="Python" scheme="https://ashless.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FFmpeg Basic commands</title>
+    <link href="https://ashless.io/2023/01/10/ffmpeg/"/>
+    <id>https://ashless.io/2023/01/10/ffmpeg/</id>
+    <published>2023-01-11T03:09:43.000Z</published>
+    <updated>2023-02-10T01:17:18.374Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Basic-commands-for-FFmpeg&quot;&gt;&lt;a href=&quot;#Basic-commands-for-FFmpeg&quot; class=&quot;headerlink&quot; title=&quot;Basic commands for FFmpeg&quot;&gt;&lt;/a&gt;Basic</summary>
+        
+      
+    
+    
+    
+    
+    <category term="ffmpeg" scheme="https://ashless.io/tags/ffmpeg/"/>
+    
+    <category term="EN" scheme="https://ashless.io/tags/EN/"/>
+    
+    <category term="Linux" scheme="https://ashless.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test post</title>
+    <link href="https://ashless.io/2023/01/09/test-post/"/>
+    <id>https://ashless.io/2023/01/09/test-post/</id>
+    <published>2023-01-09T08:04:20.000Z</published>
+    <updated>2023-02-10T01:17:35.082Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;This-is-a-test-post&quot;&gt;&lt;a href=&quot;#This-is-a-test-post&quot; class=&quot;headerlink&quot; title=&quot;This is a test post.&quot;&gt;&lt;/a&gt;This is a test</summary>
+        
+      
+    
+    
+    
+    
+    <category term="test" scheme="https://ashless.io/tags/test/"/>
+    
+  </entry>
+  
+</feed>
