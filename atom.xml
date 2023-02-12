@@ -6,7 +6,7 @@
   <link href="https://ashless.io/atom.xml" rel="self"/>
   
   <link href="https://ashless.io/"/>
-  <updated>2023-02-10T01:17:23.570Z</updated>
+  <updated>2023-02-12T12:06:56.140Z</updated>
   <id>https://ashless.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Run Kikoeru from source code</title>
+    <link href="https://ashless.io/2023/02/12/kikoeru/"/>
+    <id>https://ashless.io/2023/02/12/kikoeru/</id>
+    <published>2023-02-12T11:56:18.000Z</published>
+    <updated>2023-02-12T12:06:56.140Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;check-the-nodejs-version&quot;&gt;&lt;a href=&quot;#check-the-nodejs-version&quot; class=&quot;headerlink&quot; title=&quot;check the nodejs version&quot;&gt;&lt;/a&gt;check the</summary>
+        
+      
+    
+    
+    
+    
+    <category term="EN" scheme="https://ashless.io/tags/EN/"/>
+    
+    <category term="Linux" scheme="https://ashless.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Basic Git commands</title>
