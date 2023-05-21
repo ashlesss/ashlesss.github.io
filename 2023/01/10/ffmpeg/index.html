@@ -406,7 +406,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    990
+                    1k
                 </div>
                 
 
@@ -471,9 +471,20 @@ $ ffmpeg <span class="token parameter variable">-sseof</span> -00:10:00 <span cl
 
 <p>If your audio file is using a codec that the output container supports (e.g. MP3 audio in AVI or M4A&#x2F;AAC audio in MP4), you can <a target="_blank" rel="noopener" href="https://ffmpeg.org/ffmpeg.html#Stream-copy">stream copy</a> (re-mux) it instead of re-encoding, which will preserve the audio quality:</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ffmpeg <span class="token parameter variable">-loop</span> <span class="token number">1</span> <span class="token parameter variable">-i</span> img.jpg <span class="token parameter variable">-i</span> audio.m4a <span class="token parameter variable">-c:v</span> libx264 <span class="token parameter variable">-c:a</span> copy <span class="token parameter variable">-shortest</span> out.mp4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>Optional commands</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; loop input stream at 1 framerate.
+-loop 1 -framerate 1 
+
+&#x2F;&#x2F; set aspect of the video as 16:9
+-vf scale&#x3D;1920:1080,setdar&#x3D;16&#x2F;9<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="Adding-subtitle-to-video"><a href="#Adding-subtitle-to-video" class="headerlink" title="Adding subtitle to video"></a>Adding subtitle to video</h4><p>There is two way of adding subtitle to a video. First one is to add it as <strong>hard subtitle</strong> which is burn captions into the video. Second one is to add it as <strong>soft subtitle</strong> that viewers can turn it on or off. <br></p>
-<h5 id="Hard-subtitle"><a href="#Hard-subtitle" class="headerlink" title="Hard subtitle"></a>Hard subtitle</h5><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ffmpeg <span class="token parameter variable">-i</span> sample_video_ffmpeg.mp4 <span class="token parameter variable">-vf</span> <span class="token assign-left variable">ass</span><span class="token operator">=</span>output_subtitle.ass output_ass.mp4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="Hard-subtitle"><a href="#Hard-subtitle" class="headerlink" title="Hard subtitle"></a>Hard subtitle</h5><p><strong><code>.ass</code> file</strong></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ffmpeg <span class="token parameter variable">-i</span> video.mp4 <span class="token parameter variable">-vf</span> <span class="token assign-left variable">ass</span><span class="token operator">=</span>subtitle.ass output_ass.mp4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong><code>.srt</code> file</strong></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ffmpeg <span class="token parameter variable">-i</span> video.mp4 <span class="token parameter variable">-vf</span> <span class="token assign-left variable">subtitles</span><span class="token operator">=</span>subtitle.srt output_srt.mp4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <p>If you don’t want to re-render the audio source, add <code>-c:a copy</code>. Since you want to add subttile to the video as hard way, you cannot use <code>-c:v copy</code>:</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ffmpeg <span class="token parameter variable">-i</span> video.mp4 <span class="token parameter variable">-c:a</span> copy <span class="token parameter variable">-vf</span> <span class="token assign-left variable">ass</span><span class="token operator">=</span>output_subtitle.ass out.mp4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -481,7 +492,8 @@ $ ffmpeg <span class="token parameter variable">-sseof</span> -00:10:00 <span cl
 <p>The <code>-c:s mov_text</code> option sets the input video file format to the <code>MOV_TEXT</code> format.</p>
 <p>We’re also using the <code>-metadata:s:s:0</code> option, which sets metadata for Stream:Subtitle: Number of the stream, starting with 0.</p>
 <p>Finally, the <code>language=eng</code> option sets the subtitle language to English.</p>
-<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a><font color="#eb9036"><ins>Reference</ins></font></h3><p><a target="_blank" rel="noopener" href="https://shotstack.io/learn/use-ffmpeg-to-trim-video/">How to trim a video using FFmpeg</a></p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a><font color="#eb9036"><ins>Reference</ins></font></h3><p><strong><a target="_blank" rel="noopener" href="https://ffmpeg.org/ffmpeg.html">FFmpeg Documentation</a></strong></p>
+<p><a target="_blank" rel="noopener" href="https://shotstack.io/learn/use-ffmpeg-to-trim-video/">How to trim a video using FFmpeg</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.martin-riedl.de/2020/12/06/using-hardware-acceleration-on-macos-with-ffmpeg/">Using Hardware Acceleration on MacOS with FFmpeg</a></p>
 <p><a target="_blank" rel="noopener" href="https://trac.ffmpeg.org/wiki/Slideshow">Slideshow</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.baeldung.com/linux/subtitles-ffmpeg">How to Embed Subtitles into a Video Using FFmpeg</a></p>
@@ -918,7 +930,7 @@ $ ffmpeg <span class="token parameter variable">-sseof</span> -00:10:00 <span cl
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">2.2k</span>
+                        class="white-color">2.3k</span>
             
             
             
