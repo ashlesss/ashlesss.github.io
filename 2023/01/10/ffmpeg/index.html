@@ -456,7 +456,7 @@ $ ffmpeg <span class="token parameter variable">-sseof</span> -00:10:00 <span cl
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ffmpeg <span class="token parameter variable">-hwaccel</span> cuda <span class="token parameter variable">-i</span> input.mp4 output.mp4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>Example for using hardware acceleration and keep output video in 30 fps constant framerate(NVIDIA verson):</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ffmpeg <span class="token parameter variable">-hwaccel</span> cuda <span class="token parameter variable">-i</span> inoput.mp4 <span class="token parameter variable">-filter:v</span> 30fps output.mp4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ffmpeg <span class="token parameter variable">-hwaccel</span> cuda <span class="token parameter variable">-i</span> input.mp4 <span class="token parameter variable">-filter:v</span> 30fps output.mp4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <br>
 <b>For Mac</b>
 <br>
@@ -485,7 +485,7 @@ $ ffmpeg <span class="token parameter variable">-sseof</span> -00:10:00 <span cl
 <p><strong><code>.srt</code> file</strong></p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ffmpeg <span class="token parameter variable">-i</span> video.mp4 <span class="token parameter variable">-vf</span> <span class="token assign-left variable">subtitles</span><span class="token operator">=</span>subtitle.srt output_srt.mp4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>If you don’t want to re-render the audio source, add <code>-c:a copy</code>. Since you want to add subttile to the video as hard way, you cannot use <code>-c:v copy</code>:</p>
+<p>If you don’t want to re-render the audio source, add <code>-c:a copy</code>. Since you want to add subtitle to the video as hard way, you cannot use <code>-c:v copy</code>:</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ffmpeg <span class="token parameter variable">-i</span> video.mp4 <span class="token parameter variable">-c:a</span> copy <span class="token parameter variable">-vf</span> <span class="token assign-left variable">ass</span><span class="token operator">=</span>output_subtitle.ass out.mp4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h5 id="Soft-subtitle"><a href="#Soft-subtitle" class="headerlink" title="Soft subtitle"></a>Soft subtitle</h5><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ffmpeg <span class="token parameter variable">-i</span> video.mp4 <span class="token parameter variable">-i</span> subtitle.srt <span class="token parameter variable">-c</span> copy <span class="token parameter variable">-c:s</span> mov_text -metadata:s:s:0 <span class="token assign-left variable">language</span><span class="token operator">=</span>eng out.mp4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
